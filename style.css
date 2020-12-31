@@ -7,6 +7,8 @@ ul {
     float: right;
     right: 10px;
     top: 18px;
+    font-family: Arial;
+    font-weight: bold;
 }
 
 li  {
@@ -27,8 +29,29 @@ img {
     position: fixed;
     top: 300px;
     left: 240px;
+    border-radius: 25px;
 }
 
 .form-control {
     width: 300px;
+}
+
+.footer {
+    position: fixed;
+    left: auto;
+    right: auto;
+    bottom: 30px;
+    width: 80%;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: Arial;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: grey;
 }
