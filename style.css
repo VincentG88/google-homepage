@@ -24,6 +24,11 @@ img {
 }
 
 #form {
-    margin-top: 300px;
-   
+    position: fixed;
+    top: 300px;
+    left: 240px;
+}
+
+.form-control {
+    width: 300px;
 }
