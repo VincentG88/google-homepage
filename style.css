@@ -8,6 +8,7 @@ html {
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
     grid-template-areas: "about store . gmail images menu sign-in";
+    margin: 0 20px;
 }
 
 a {
@@ -15,6 +16,10 @@ a {
     color: rgb(49, 48, 48);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #about { 
@@ -33,12 +38,14 @@ a {
     grid-area: gmail;
     justify-self: center;
     align-self: center;
-}*
+    margin-right: 45px;
+}
 
 #images { 
     grid-area: images;
     justify-self: center;
     align-self: center;
+    margin-right: 45px;
 }
 
 
@@ -46,13 +53,31 @@ a {
     grid-area: menu;
     justify-self: center;
     align-self: center;   
+    margin-right: 50px;
 }
 
 #sign-in {
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: default;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: 2px;;
+    background: rgb(0, 102, 255);
+    width: 45px;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 35px;
 }
+
 
 #main {
     min-height: 100%;
@@ -70,7 +95,8 @@ a {
 #logo {
     grid-area: logo;
     justify-self: center;
-    align-self: end;
+    align-self: flex-end;
+    margin-top: 233px;
 }
 
 #search {
@@ -80,7 +106,12 @@ a {
     border: 1px solid rgba(160, 153, 153, 0.308);
     border-radius: 30px;
     height: 40px;
-    width: 475px;
+    width: 487px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+    font-size: 16px;
 }
 
 #search:focus {
@@ -102,23 +133,62 @@ a {
     grid-area: google-search;
     justify-self: center;
     align-self: end;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    height: 36px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    text-align: center;
+    font-size: 14px;
+    min-width: 54px;
+    user-select: none;
+}
+
+#google-search:hover {
+    box-shadow: 1px 1px 4px rgb(179, 176, 176);
 }
 
 #feeling-lucky {
     grid-area: feeling-lucky;
     justify-self: center;
     align-self: end;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    height: 35px;
+    height: 36px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    text-align: center;
+    font-size: 14px;
+    min-width: 54px;
+    user-select: none;
 }
+
+#feeling-lucky:hover {
+    box-shadow: 1px 1px 4px rgb(179, 176, 176);
+}
+
 
 #footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: 70px 70px 70px 120px 370px 70px 70px 70px;
-    grid-template-rows: 50px;
+    background-color: #f2f2f2;
+    line-height: 40px;
+    text-align: center;
     margin-left: 10px;
+    border-top: 1px solid #dadce0;
+    border-radius: 1px solid;
+    display: grid;
+    grid-template-columns: 70px 70px 70px 120px 1300px 70px 70px 70px;
+    grid-template-rows: 50px;
     grid-template-areas: 
     "advertising business about hsw . privacy terms settings";
 }
@@ -127,36 +197,52 @@ a {
     grid-area: advertising;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 10px;
+    
 }
 #business {
     grid-area: business;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 15px;
 }
 #about {
     grid-area: about;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 5px;
 }
 #hsw {
     grid-area: hsw;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 5px;
 }
 #privacy {
     grid-area: privacy;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 10px;
 }
 #terms {
     grid-area: terms;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 10px;
 }
 #settings {
     grid-area: settings;
     justify-self: center;
     align-self: center;
+    font-size: 10pt;
+    margin-left: 10px;
+    margin-left: 10px;
 }
 
 #Ireland {
@@ -164,14 +250,21 @@ a {
     left: 0;
     bottom: 20px;
     width: 100%;
+    background-color:#f2f2f2;
+    border-top: 1px solid #dadce0;;
+    border-radius: 1px solid #dadce0;
+    font-size: 14px;
     display: grid;
     grid-template-columns: 70px 70px 70px 120px 370px 70px 70px 70px;;
-    grid-template-rows: 50px;
-    margin-left: 20px;
+    grid-template-rows: 70px;
     grid-template-areas: "country";
 }
 
 #country {
     grid-area: country;
     align-self: auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12pt;
+    margin-left: 10px;
 }
